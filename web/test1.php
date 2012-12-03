@@ -1,31 +1,46 @@
 <html>
-    <head><title>test connect database(mysql)</title>
-    </head>
-    <body>
-        <table><tr><th>编号</th><th>标题</th><th>添加时间</th><th>内容</th></tr>
+<head>
+    <title>测试数据库MYSQL连接</title>
+    <META http-equiv="content-type" content="text/html; charset=utf-8">
+</head>
+<body>
+
 <?php
-    echo "Hello,Mxm";
-
-    require_once("/lib/Db.php");
-    $db=DB::connect($dbhost, $dbuser, $dbpw, $dbname, $pconnect = 1,$charset='utf8');
-    if(DB::iserror($db)){
-        die($db->getMessage());
-    }
-
-    $sql="select * from myweb";
-    $q=$db->query($sql);
-    if(DB::iserror($q)){
-        die($q->getMessage());
-    }
-
-    while($->fetchInto($row)){
+$conn=mysql_connect("localhost","root",'123456')
+    or die("Can't connected to DB.");
+mysql_select_db("myweb",$conn)
+    or die("Can't found DB.");
+$sql="select  * from message";
+mysql_query("set names utf8");
+$reVal=mysql_query($sql,$conn);
 ?>
+<table style="border: solid 1px #030303;border-collapse: 0;">
     <tr>
-        <td><?=$row[0]?></td><td><?=$row[1]?></td><td><?=$row[2]?></td><td><?=$row[3]?></td>
+        <th>
+            编号
+        </th>
+        <th>
+            标题
+        </th>
+        <th>
+            备注
+        </th>
+        <th>
+            时间
+        </th>
     </tr>
-<?php
+    <?php
+    while($row=mysql_fetch_object($reVal)){
+        ?>
+        <tr>
+            <td><?= $row->id ?></td>
+            <td><?= $row->title ?></td>
+            <td><?= $row->remark ?></td>
+            <td><?= $row->create_time ?></td>
+        </tr>
+        <?php
     }
-?>
-        </table>
-    </body>
+    ?>
+</table>
+</body>
 </html>
