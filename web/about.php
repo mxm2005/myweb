@@ -2,31 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Work Center Theme - Free CSS Template</title>
-<meta name="keywords" content="work center, theme, piecemaker 3D image slider, 960, free templates, CSS, HTML" />
-<meta name="description" content="Work Center Theme is a free CSS template by templatemo.com for everyone. Feel free to use it for any purpose." />
+<title>Work Center Theme, About Our Company</title>
+<meta name="keywords" content="work center, theme, about us, our company, free templates, templatemo, CSS, HTML" />
+<meta name="description" content="Work Center Theme, About Us, Company, free CSS template by templatemo.com" />
 <link href="css/templatemo_style.css" rel="stylesheet" type="text/css" />
-
-<script type="text/javascript" src="js/swfobject/swfobject.js"></script>
-        
-<script type="text/javascript">
-  var flashvars = {};
-  flashvars.cssSource = "css/piecemaker.css";
-  flashvars.xmlSource = "piecemaker.xml";
-	
-  var params = {};
-  params.play = "true";
-  params.menu = "false";
-  params.scale = "showall";
-  params.wmode = "transparent";
-  params.allowfullscreen = "true";
-  params.allowscriptaccess = "always";
-  params.allownetworking = "all";
-  
-  swfobject.embedSWF('piecemaker.swf', 'piecemaker', '960', '440', '10', null, flashvars,    
-  params, null);
-
-</script>
 
 <script language="javascript" type="text/javascript">
 function clearText(field)
@@ -62,20 +41,32 @@ ddsmoothmenu.init({
 </script> 
 </head>
 
-<body>
+<body id="home">
 
 <?php include_once("head.html"); ?>
 
-<div id="templatemo_middle_wrapper">
-	<div id="templatemo_middle">
-        <div id="piecemaker">
-          <p>This template is provided by <a href="http://www.templatemo.com">www.templatemo.com</a> and feel free to use it for your websites.</p>
-        </div>
-	</div>
-</div> <!-- END of slider -->
-
 <div id="templatemo_main_top"></div>
 <div id="templatemo_main">
+	<div class="col col_23">
+        <h2>Our History</h2>
+        <img src="images/templatemo_image_01.jpg" alt="Image 01" class="float_l img_float_l" />
+        <p><em> Phasellus rutrum sollicitudin arcu sed varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</em></p>
+        <p>Nullam laoreet nisi eu felis iaculis nec convallis augue egestas. Donec ut lacus tellus. Sed dictum, magna laoreet vehicula posuere, tortor justo dictum ante, nec ultrices elit dolor ac nisl. Sed at porttitor ante. <a href="#">Cras massa nisl</a>, dictum et molestie non, pretium vel massa. Integer in erat ipsum, ut tristique velit. Vivamus tempus velit justo, sit amet cursus lorem. In hac habitasse platea dictumst. Aenean sagittis condimentum quam, non aliquam neque scelerisque in. In hac habitasse platea dictumst. Donec nunc dolor, rhoncus sit amet posuere at, lacinia eget arcu. Nulla adipiscing auctor pellentesque.</p>
+        <p>Aenean viverra leo in augue pulvinar volutpat. Sed feugiat nisl nec eros vestibulum vitae vulputate ligula eleifend. Quisque rhoncus mattis ante at dictum. Aliquam non porttitor erat. Curabitur ornare dapibus urna vitae sollicitudin. Nullam dictum auctor neque <a href="#">sit amet tristique</a>. Phasellus quis urna tellus, eu vestibulum urna. Nulla ac purus nibh, quis iaculis libero. Ut sem orci, fermentum in tincidunt at, luctus et orci. Cras aliquam lobortis tortor quis dignissim. Vivamus egestas aliquet est, a pharetra tellus adipiscing sit amet. Nullam tincidunt malesuada nulla, at aliquet orci semper vel. Suspendisse dignissim, nibh vel tempor pharetra, sem sapien egestas lorem, et aliquet eros quam non felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Validate <a href="http://validator.w3.org/check?uri=referer" rel="nofollow"><strong>XHTML</strong></a> &amp; <a href="http://jigsaw.w3.org/css-validator/check/referer" rel="nofollow"><strong>CSS</strong></a>.</p>
+	</div>
+    <div class="col col_13 no_margin_right">
+    	<h3>Testimonials</h3>
+        <div class="testimonial">
+            <p>Morbi egestas metus ac lectus convallis in ullamcorper velit sagittis. Vivamus turpis nisl, ornare lacinia eleifend sit amet. Morbi varius risus a sem scelerisque et mollis tellus cursus.</p>
+            <div class="cleaner"></div>
+            <cite>David <a href="#"><span>- CTO, media company</span></a></cite></div>
+        <div class="testimonial">
+            <p>Donec et interdum magna. Etiam nulla tortor, sodales vitae placerat eu, congue sed leo. Nunc non augue mauris, ut dapibus mi. Praesent semper neque sollicitudin mattis.</p>
+            <div class="cleaner"></div>
+            <cite>John<a href="#"><span> - CEO, media company</span></a></cite></div>
+    </div>    
+    <div class="cleaner h40"></div>
+        
     <div class="fp_box5">
         <img src="images/applications.png" alt="Image 01" />
         <h2><a href="#">Web Design</a></h2>
@@ -98,21 +89,8 @@ ddsmoothmenu.init({
     </div>
     <div class="fp_box5 no_margin_right">
         <img src="images/presentation.png" alt="Image 05" />
-        <h2><a href="#">Marketing</a></h2>
+        <h2><a href="#"> Marketing</a></h2>
         <p>Maecenas sed mauris tortor, nec pulvinar sapien. Vivamus lobortis purus id risus lacinia tempus justo et.</p>
-    </div>
-    <div class="cleaner h50"></div>
-    <div class="col_12 float_l">
-    	<h2>Welcome To Work Center</h2>
-        <img src="images/templatemo_image_01.jpg" alt="Image 01" class="float_l img_float_l" />
-        <p><em>Nunc dictum cursus laoreet. Cras dapibus quam sed dolor rhoncus tincidunt.</em></p>
-        <p><a href="http://www.templatemo.com" target="_parent">Work Center</a> is  free css template provided by <a href="http://www.templatemo.com">templatemo.com</a> for your personal or commercial websites. Cras vulputate laoreet porta. In mi enim, pulvinar vitae vehicula vestibulum, fringilla quis risus. Fusce vel mi mi, ac mollis nisi. Mauris mollis fringilla molestie. Nunc a libero elit, at dignissim elit. </p>
-    </div>
-    <div class="col_12 float_r">
-    	<h2>Web Technologies</h2>
-        <img src="images/templatemo_image_02.jpg" alt="Image 02" class="float_l img_float_l" />
-        <p><em>Sed imperdiet fermentum sagittis. Donec ut diam sed enim dapibus id non metus.</em></p>
-        <p>Donec est dolor, pharetra ac consectetur vel, pretium nec dui. Duis dignissim viverra nisi vitae molestie. Proin pulvinar accumsan leo, id rutrum dui consequat quis. Sed at risus quis eros venenatis semper. Quisque neque tellus, dignissim sed ac nunc. Phasellus vitae tellus metus nulla. Validate <a href="http://validator.w3.org/check?uri=referer" rel="nofollow"><strong>XHTML</strong></a> &amp; <a href="http://jigsaw.w3.org/css-validator/check/referer" rel="nofollow"><strong>CSS</strong></a>.</p>	
     </div>
     
     <div class="cleaner"></div>
@@ -131,6 +109,7 @@ ddsmoothmenu.init({
                 <li><a href="http://www.koflash.com">Free Web Gallery</a></li>
 			</ul>   
         </div>
+        
         <div class="col col_14">
         	<h5>Pages</h5>
             <ul class="footer_list">
@@ -141,6 +120,7 @@ ddsmoothmenu.init({
                 <li><a href="contact.html">Contact</a></li>
 			</ul>
         </div>
+        
         <div class="col col_14">
         	<h5>Follow Us</h5>	
             <ul class="footer_list">
@@ -148,7 +128,6 @@ ddsmoothmenu.init({
                 <li><a href="#" class="social twitter">Twitter</a></li>
                 <li><a href="#" class="social feed">Feed</a></li>
 			</ul>
-            
         </div>
         
         <div class="col col_14 no_margin_right">
@@ -169,6 +148,6 @@ ddsmoothmenu.init({
 </html>
 <script type="text/javascript">
     $(function(){
-        $(".mySel").find("a[href='index.php']").attr("class","selected");
+        $(".mySel").find("a[href='about.php']").attr("class","selected");
     });
 </script>

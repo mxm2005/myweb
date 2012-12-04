@@ -3,30 +3,24 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Work Center Theme - Free CSS Template</title>
-<meta name="keywords" content="work center, theme, piecemaker 3D image slider, 960, free templates, CSS, HTML" />
+<meta name="keywords" content="work center, theme, distortion_effect 3D image slider, 960, free templates, CSS, HTML" />
 <meta name="description" content="Work Center Theme is a free CSS template by templatemo.com for everyone. Feel free to use it for any purpose." />
 <link href="css/templatemo_style.css" rel="stylesheet" type="text/css" />
 
 <script type="text/javascript" src="js/swfobject/swfobject.js"></script>
         
-<script type="text/javascript">
-  var flashvars = {};
-  flashvars.cssSource = "css/piecemaker.css";
-  flashvars.xmlSource = "piecemaker.xml";
-	
-  var params = {};
-  params.play = "true";
-  params.menu = "false";
-  params.scale = "showall";
-  params.wmode = "transparent";
-  params.allowfullscreen = "true";
-  params.allowscriptaccess = "always";
-  params.allownetworking = "all";
-  
-  swfobject.embedSWF('piecemaker.swf', 'piecemaker', '960', '440', '10', null, flashvars,    
-  params, null);
-
-</script>
+	<!-- embedding SWF -->
+		<script type="text/javascript">
+			var flashvars = {};
+			flashvars.xml_file = "distortion_list.xml";
+			var params = {};
+			params.wmode = "transparent";
+			var attributes = {};
+			attributes.id = "flash_distortion_slider";
+			attributes.name = "flash_distortion_slider";
+			swfobject.embedSWF("distortion_effect.swf", "flash_distortion_slider", "960", "360", "9.0.0", false, flashvars, params, attributes);
+		</script>
+	<!-- embedding SWF -->
 
 <script language="javascript" type="text/javascript">
 function clearText(field)
@@ -68,9 +62,16 @@ ddsmoothmenu.init({
 
 <div id="templatemo_middle_wrapper">
 	<div id="templatemo_middle">
-        <div id="piecemaker">
-          <p>This template is provided by <a href="http://www.templatemo.com">www.templatemo.com</a> and feel free to use it for your websites.</p>
-        </div>
+        <!-- flash gallery SWF -->
+			<div id="flash_distortion_slider">
+            	<br /><br />
+            	<a href="http://www.flashmo.com" target="_blank">Free Flash Gallery</a>
+                <br /><br />
+                <a href="http://www.adobe.com/go/getflashplayer" target="_blank">
+                    <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
+                </a>
+			</div>
+		<!-- flash gallery SWF --> 
 	</div>
 </div> <!-- END of slider -->
 
@@ -169,6 +170,6 @@ ddsmoothmenu.init({
 </html>
 <script type="text/javascript">
     $(function(){
-        $(".mySel").find("a[href='index.php']").attr("class","selected");
+        $(".mySel").find("a[href='distortion_effect.php']").attr("class","selected");
     });
 </script>
