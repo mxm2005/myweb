@@ -5,20 +5,19 @@
         <table><tr><th>编号</th><th>标题</th><th>添加时间</th><th>内容</th></tr>
 <?php
     echo "Hello,Mxm";
+    require_once(dirname(__FILE__)."/lib/Db.php");
+    $myDB=new Db();
+    //$db=DB::connect($dbhost, $dbuser, $dbpw, $dbname, $pconnect = 1,$charset='utf8');
+    //if(DB::iserror($db)){
+      //  die($db->getMessage());
+    //}
 
-    require_once("/lib/Db.php");
-    $db=DB::connect($dbhost, $dbuser, $dbpw, $dbname, $pconnect = 1,$charset='utf8');
-    if(DB::iserror($db)){
-        die($db->getMessage());
-    }
+    $sql="select * from message";
+    //$q=$db->query($sql);
 
-    $sql="select * from myweb";
-    $q=$db->query($sql);
-    if(DB::iserror($q)){
-        die($q->getMessage());
-    }
+    $q=$myDB->query($sql);
 
-    while($->fetchInto($row)){
+    while($myDB->fetch_array($q,$row)){
 ?>
     <tr>
         <td><?=$row[0]?></td><td><?=$row[1]?></td><td><?=$row[2]?></td><td><?=$row[3]?></td>
