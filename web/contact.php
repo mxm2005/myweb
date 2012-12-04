@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Work Center Theme, Contact Page</title>
+<title>联系我们--秋枫工作室</title>
 <meta name="keywords" content="work center, theme, free templates, website templates, CSS, HTML" />
 <meta name="description" content="Work Center Theme is a free CSS template provided by templatemo.com" />
 <link href="css/templatemo_style.css" rel="stylesheet" type="text/css" />
@@ -43,44 +43,11 @@ ddsmoothmenu.init({
 
 <body id="home">
 
-<div id="templatemo_header_wrapper">
-    <div id="templatemo_header">
-        <div id="site_title"><a href="http://www.templatemo.com">WORK<span>CENTER</span></a></div>
-        <div id="templatemo_menu" class="ddsmoothmenu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="distortion_effect.html">Distortion</a></li>
-                <li><a href="about.html">About</a>
-                    <ul>
-                        <li><span class="top"></span><span class="bottom"></span></li>
-                        <li><a href="distortion_effect.html">Distortion Effect</a></li>
-                        <li><a href="http://www.templatemo.com/page/1">Sub menu 1</a></li>
-                        <li><a href="http://www.templatemo.com/page/2">Sub menu 2</a></li>
-                        <li><a href="http://www.templatemo.com/page/3">Sub menu 3</a></li>
-                  	</ul>
-                </li>
-                <li><a href="portfolio.html">Portfolio</a>
-                    <ul>
-                        <li><span class="top"></span><span class="bottom"></span></li>
-                        <li><a href="http://www.templatemo.com/page/1">Sub menu 1</a></li>
-                        <li><a href="http://www.templatemo.com/page/2">Sub menu 2</a></li>
-                        <li><a href="http://www.templatemo.com/page/3">Sub menu 3</a></li>
-                        <li><a href="http://www.templatemo.com/page/4">Sub menu 4</a></li>
-                        <li><a href="http://www.templatemo.com/page/5">Sub menu 5</a></li>
-                        <li><a href="distortion_effect.html">Distortion Gallery</a></li>
-                  	</ul>
-                </li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html" class="selected">Contact</a></li>
-            </ul>
-            <br style="clear: left" />
-        </div> <!-- end of templatemo_menu -->
-    </div> <!-- END of header -->
-</div>
+<?php include_once("head.html"); ?>
 
 <div id="templatemo_main_top"></div>
 <div id="templatemo_main">
-	<h2>Contact Information</h2>
+	<h2>联系我们</h2>
     <div class="col_12 float_l">
     	<h4>Studio Address</h4>
         <h6><strong>Company Name</strong></h6>
@@ -97,25 +64,28 @@ ddsmoothmenu.init({
         
 	</div>
     <div class="col_12 float_r">
-    	<h4>Feel free to send us a message.</h4>
-        <p>Donec pretium, magna a iaculis vehicula, enim tortor dictum nunc, vitae auctor dui velit molestie non velit. Validate <a href="http://validator.w3.org/check?uri=referer" rel="nofollow"><strong>XHTML</strong></a> &amp; <a href="http://jigsaw.w3.org/css-validator/check/referer" rel="nofollow"><strong>CSS</strong></a>.</p>
+    	<h4>如果您有项目需要开发或修改，请给我留言！</h4>
+        <p>
+            您好，如果您有项目需要开发或者修改，请您给我留言，我会尽快和您联系！
+        </p>
         <div id="contact_form">
            <form method="post" name="contact" action="#">
                         
-                        <label for="author">Name:</label> <input type="text" id="author" name="author" class="required input_field" />
+                        <label for="author">名 称:</label> <input type="text" id="author" name="author" class="required input_field" />
                         <div class="cleaner h10"></div>
                         <label for="email">Email:</label> <input type="text" id="email" name="email" class="validate-email required input_field" />
                         <div class="cleaner h10"></div>
                         
-						<label for="subject">Subject:</label> <input type="text" name="subject" id="subject" class="input_field" />
+						<label for="subject">主 题:</label> <input type="text" name="subject" id="subject" class="input_field" />
 
 						<div class="cleaner h10"></div>
         
-                        <label for="text">Message:</label> <textarea id="text" name="text" rows="0" cols="0" class="required"></textarea>
+                        <label for="text">留 言:</label> <textarea id="text" name="text" rows="0" cols="0" class="required"></textarea>
                         <div class="cleaner h10"></div>
                         
-                        <input type="submit" value="Send" id="submit" name="submit" class="submit_btn float_l" />
-						<input type="reset" value="Reset" id="reset" name="reset" class="submit_btn float_r" />
+                        <input onclick="javascript:Main.addMsg()" type="button" value="提 交" id="submit" name="submit" class="submit_btn float_l" />
+						<input type="reset" value="重 置" id="reset" name="reset" class="submit_btn float_r" />
+                        <div class="cleaner"></div>
             </form>
         </div>
 	</div>
@@ -171,3 +141,9 @@ ddsmoothmenu.init({
 </div> <!-- END of footer -->
 </body>
 </html>
+<script type="text/javascript" src="js/main.js?v=1"></script>
+<script type="text/javascript">
+    $(function(){
+        $(".mySel").find("a[href='contact.php']").attr("class","selected");
+    });
+</script>

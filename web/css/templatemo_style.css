@@ -6,7 +6,7 @@ body {
 	margin: 0;
 	padding: 0;
 	color: #3d3d3a;
-	font-family: Tahoma, Geneva, sans-serif;
+	font-family: 宋体,Tahoma, Geneva, sans-serif;
 	font-size: 12px;
 	line-height: 1.4em; 
 	background-color: #d6d6ce;
@@ -155,7 +155,7 @@ h6 { font-size: 12px; margin: 0 0 5px; padding: 0; }
 #templatemo_main {
 	width: 960px;
 	margin: 0 auto;
-	padding: 60px 10px;
+	padding: 30px 10px;
 }
 
 #content { 
@@ -580,13 +580,15 @@ h6 { font-size: 12px; margin: 0 0 5px; padding: 0; }
 	margin-top: 5px;
 }
 
-#contact_form form .submit_btn { 
-	padding: 5px 14px; 
-	color: #333; 
-	background: #e7e7e0; 
-	border: 1px solid #c8c8bd;
+#contact_form form .submit_btn {
+	color: #FFF;
+	background: url("/images/btn139.gif") no-repeat;
+    height: 29px;
+    width: 70px;
+    border: none;
 	font-size:14px; 
 	margin: 10px 0px;
+    cursor:pointer;text-align: center;
 }	
 
 .col { float: left; margin-right: 30px }

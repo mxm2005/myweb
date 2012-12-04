@@ -17,8 +17,8 @@ function clearText(field)
 
 <link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
 
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/ddsmoothmenu.js">
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script type="text/javascript" src="/js/ddsmoothmenu.js">
 
 /***********************************************
 * Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
@@ -38,8 +38,12 @@ ddsmoothmenu.init({
 	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
 })
 
-</script> 
-
+</script>
+    <script type="text/javascript">
+        jQuery(function(){ alert($(".mySel").html());
+            $(".mySel").find("a [href='portfolio.php']").attr("class","selected");
+        });
+    </script>
 <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
 <script src="js/prototype.js" type="text/javascript"></script>
 <script src="js/scriptaculous.js?load=effects,builder" type="text/javascript"></script>
@@ -49,40 +53,7 @@ ddsmoothmenu.init({
 
 <body id="home">
 
-<div id="templatemo_header_wrapper">
-    <div id="templatemo_header">
-        <div id="site_title"><a href="http://www.templatemo.com">WORK<span>CENTER</span></a></div>
-        <div id="templatemo_menu" class="ddsmoothmenu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="distortion_effect.html">Distortion</a></li>
-                <li><a href="about.html">About</a>
-                    <ul>
-                        <li><span class="top"></span><span class="bottom"></span></li>
-                        <li><a href="distortion_effect.html">Distortion Effect</a></li>
-                        <li><a href="http://www.templatemo.com/page/1">Sub menu 1</a></li>
-                        <li><a href="http://www.templatemo.com/page/2">Sub menu 2</a></li>
-                        <li><a href="http://www.templatemo.com/page/3">Sub menu 3</a></li>
-                  	</ul>
-                </li>
-                <li><a href="portfolio.html" class="selected">Portfolio</a>
-                    <ul>
-                        <li><span class="top"></span><span class="bottom"></span></li>
-                        <li><a href="http://www.templatemo.com/page/1">Sub menu 1</a></li>
-                        <li><a href="http://www.templatemo.com/page/2">Sub menu 2</a></li>
-                        <li><a href="http://www.templatemo.com/page/3">Sub menu 3</a></li>
-                        <li><a href="http://www.templatemo.com/page/4">Sub menu 4</a></li>
-                        <li><a href="http://www.templatemo.com/page/5">Sub menu 5</a></li>
-                        <li><a href="distortion_effect.html">Distortion Gallery</a></li>
-                  	</ul>
-                </li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <br style="clear: left" />
-        </div> <!-- end of templatemo_menu -->
-    </div> <!-- END of header -->
-</div>
+<?php include_once("head.html"); ?>
 
 <div id="templatemo_main_top"></div>
 <div id="templatemo_main">

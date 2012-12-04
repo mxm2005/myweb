@@ -58,40 +58,7 @@ ddsmoothmenu.init({
 
 <body>
 
-<div id="templatemo_header_wrapper">
-    <div id="templatemo_header">
-        <div id="site_title"><a href="http://www.templatemo.com">WORK<span>CENTER</span></a></div>
-        <div id="templatemo_menu" class="ddsmoothmenu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="distortion_effect.html" class="selected">Distortion</a></li>
-                <li><a href="about.html">About</a>
-                    <ul>
-                        <li><span class="top"></span><span class="bottom"></span></li>
-                        <li><a href="distortion_effect.html">Distortion Effect</a></li>
-                        <li><a href="http://www.templatemo.com/page/1">Sub menu 1</a></li>
-                        <li><a href="http://www.templatemo.com/page/2">Sub menu 2</a></li>
-                        <li><a href="http://www.templatemo.com/page/3">Sub menu 3</a></li>
-                  	</ul>
-                </li>
-                <li><a href="portfolio.html">Portfolio</a>
-                    <ul>
-                        <li><span class="top"></span><span class="bottom"></span></li>
-                        <li><a href="http://www.templatemo.com/page/1">Sub menu 1</a></li>
-                        <li><a href="http://www.templatemo.com/page/2">Sub menu 2</a></li>
-                        <li><a href="http://www.templatemo.com/page/3">Sub menu 3</a></li>
-                        <li><a href="http://www.templatemo.com/page/4">Sub menu 4</a></li>
-                        <li><a href="http://www.templatemo.com/page/5">Sub menu 5</a></li>
-                        <li><a href="distortion_effect.html">Distortion Gallery</a></li>
-                  	</ul>
-                </li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <br style="clear: left" />
-        </div> <!-- end of templatemo_menu -->
-    </div> <!-- END of header -->
-</div>
+<?php include_once("head.html"); ?>
 
 <div id="templatemo_middle_wrapper">
 	<div id="templatemo_middle">
@@ -201,3 +168,8 @@ ddsmoothmenu.init({
 
 </body>
 </html>
+<script type="text/javascript">
+    $(function(){
+        $(".mySel").find("a[href='distortion_effect.php']").attr("class","selected");
+    });
+</script>
