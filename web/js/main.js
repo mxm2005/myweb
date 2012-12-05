@@ -18,11 +18,10 @@ var Main = (function(){
         $.post("/ajax/msg_add.php",
             {"name":name,"email":email,"title":subject,"text":text,"d":new Date()},
             function(data){
-                alert(data);
                 if(data=="True"){
-
+                    alert("你的留言已成功提交。");
                 }else{
-
+                    alert("提交发生异常。");
                 }
             }
         );
